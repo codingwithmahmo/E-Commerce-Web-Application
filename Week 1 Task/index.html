@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar-top">
+    <div class="nav-left">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <span class="brand-name">Brand</span>
+      </div>
+    </div>
+
+    <div class="nav-center">
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <div class="category-select">
+          <span>All category</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <div class="nav-icon">
+        <i class="fa-regular fa-user"></i>
+        <span>Profile</span>
+      </div>
+      <div class="nav-icon">
+        <i class="fa-regular fa-comment-dots"></i>
+        <span>Message</span>
+      </div>
+      <div class="nav-icon">
+        <i class="fa-regular fa-heart"></i>
+        <span>Orders</span>
+      </div>
+      <div class="nav-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>My cart</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bottom Navbar -->
+  <nav class="navbar-bottom">
+    <div class="nav-bottom-left">
+      <a href="#" class="nav-link all-cat">
+        <i class="fa-solid fa-bars"></i> All category
+      </a>
+      <a href="#" class="nav-link">Hot offers</a>
+      <a href="#" class="nav-link">Gift boxes</a>
+      <a href="#" class="nav-link">Projects</a>
+      <a href="#" class="nav-link">Menu item</a>
+      <div class="dropdown">
+        <a href="#" class="nav-link dropdown-toggle">
+          Help <i class="fa-solid fa-chevron-down small-icon"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#">FAQ</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-bottom-right">
+      <div class="lang-select">
+        <span>English, USD</span>
+        <i class="fa-solid fa-chevron-down small-icon"></i>
+      </div>
+      <div class="ship-select">
+        <span>Ship to</span>
+        <img src="https://flagcdn.com/w20/de.png" alt="Germany flag" />
+        <i class="fa-solid fa-chevron-down small-icon"></i>
+      </div>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
