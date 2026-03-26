@@ -92,427 +92,142 @@
   </nav>
 
   <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-  <!-- PAGINATION MAIN CONTENT - All home page sections and components -->
+  <!-- MAIN CONTENT - HOME PAGE WITH THREE COLUMN LAYOUT -->
   <!-- ═══════════════════════════════════════════════════════════════════════════ -->
   <main class="page-content">
 
-    <!-- ── SECTION 1: HERO BANNER WITH FEATURED PRODUCT ── -->
-    <section class="hero-banner">
-      <div class="hero-content">
-        <!-- Hero text section containing title and call-to-action -->
-        <div class="hero-text">
-          <h2 class="hero-title">Latest trending <span>Electronic Items</span></h2>
-          <p class="hero-subtitle">Discover our newest collection of high-quality electronics</p>
-          <button class="hero-btn">Learn more</button>
-        </div>
-        <!-- Hero image section displaying product showcase -->
-        <div class="hero-image">
-          <img src="https://via.placeholder.com/400x300?text=Headphones" alt="Featured electronic product" />
-        </div>
-      </div>
-    </section>
+    <div class="main-container">
 
-    <!-- ── SECTION 2: PRODUCT CATEGORY GRID ── -->
-    <section class="category-grid">
-      <div class="category-grid-title">
-        <h2>Shop by Category</h2>
-        <p>Browse all our product categories</p>
-      </div>
-      <div class="categories-container">
-        <!-- Category card: Smart Watches -->
-        <div class="category-card">
-          <div class="category-icon">
-            <i class="fa-solid fa-watch"></i>
-          </div>
-          <h3>Smart Watches</h3>
-          <p>45 products</p>
+      <!-- ── LEFT SIDEBAR: CATEGORIES ── -->
+      <aside class="sidebar-left">
+        <div class="categories-menu">
+          <!-- Category: Automobiles -->
+          <a href="#" class="category-item">Automobiles</a>
+          <!-- Category: Clothes and wear -->
+          <a href="#" class="category-item">Clothes and wear</a>
+          <!-- Category: Home Interiors -->
+          <a href="#" class="category-item">Home Interiors</a>
+          <!-- Category: Computer accessories -->
+          <a href="#" class="category-item">Computer accessories</a>
+          <!-- Category: Tools, equipments -->
+          <a href="#" class="category-item">Tools, equipments</a>
+          <!-- Category: Sports and outdoor -->
+          <a href="#" class="category-item">Sports and outdoor</a>
+          <!-- Category: Animal and pets -->
+          <a href="#" class="category-item">Animal and pets</a>
+          <!-- Category: Machinery tools -->
+          <a href="#" class="category-item">Machinery tools</a>
+          <!-- Category: More category -->
+          <a href="#" class="category-item">More category</a>
         </div>
-        <!-- Category card: Laptops -->
-        <div class="category-card">
-          <div class="category-icon">
-            <i class="fa-solid fa-laptop"></i>
-          </div>
-          <h3>Laptops</h3>
-          <p>38 products</p>
-        </div>
-        <!-- Category card: DSLR Cameras -->
-        <div class="category-card">
-          <div class="category-icon">
-            <i class="fa-solid fa-camera"></i>
-          </div>
-          <h3>DSLR Cameras</h3>
-          <p>52 products</p>
-        </div>
-        <!-- Category card: Headphones -->
-        <div class="category-card">
-          <div class="category-icon">
-            <i class="fa-solid fa-headphones"></i>
-          </div>
-          <h3>Headphones</h3>
-          <p>28 products</p>
-        </div>
-        <!-- Category card: Smart Cameras -->
-        <div class="category-card">
-          <div class="category-icon">
-            <i class="fa-solid fa-video"></i>
-          </div>
-          <h3>Smart Cameras</h3>
-          <p>35 products</p>
-        </div>
-      </div>
-    </section>
+      </aside>
 
-    <!-- ── SECTION 3: DEALS AND OFFERS PRODUCTS ── -->
-    <section class="products-section">
-      <div class="section-header">
-        <h2>Deals and Offers</h2>
-        <a href="#" class="view-all-link">View all →</a>
+      <!-- ── CENTER: HERO SECTION ── -->
+      <section class="hero-section">
+        <div class="hero-box">
+          <div class="hero-text">
+            <p class="hero-subtitle">Latest trending</p>
+            <h2 class="hero-title">Electronic items</h2>
+            <button class="hero-btn">Learn more</button>
+          </div>
+          <!-- IMAGE PLACEHOLDER: Replace with actual hero product image -->
+          <div class="hero-image-placeholder">
+            <!-- Manual Image Instruction: Add your hero product image here using an <img> tag -->
+            <!-- Example: <img src="path/to/image.jpg" alt="Electronic items" /> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ── RIGHT SIDEBAR: USER INFO CARDS ── -->
+      <aside class="sidebar-right">
+        <!-- Card 1: User Greeting -->
+        <div class="info-card greeting-card">
+          <p class="card-title">Hi, user<br>let's get started</p>
+          <button class="btn-primary">Join now</button>
+          <button class="btn-secondary">Log in</button>
+        </div>
+
+        <!-- Card 2: Special Offer -->
+        <div class="info-card offer-card">
+          <p class="card-text"><strong>Get us $10 off</strong><br>with a new supplier</p>
+        </div>
+
+        <!-- Card 3: Send Quotes -->
+        <div class="info-card quotes-card">
+          <p class="card-text">Send quotes with supplier preferences</p>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- ── SECTION 2: DEALS AND OFFERS ── -->
+    <section class="deals-section">
+      <div class="deals-header">
+        <h3 class="deals-title">Deals and offers</h3>
+        <p class="deals-subtitle">Hygiene equipments</p>
       </div>
+
+      <!-- Discount badges row -->
+      <div class="discount-badges">
+        <span class="badge">-20%</span>
+        <span class="badge">-11%</span>
+        <span class="badge">-17%</span>
+        <span class="badge">-14%</span>
+      </div>
+
+      <!-- ── PRODUCTS GRID ── -->
       <div class="products-grid">
-        <!-- Product card 1 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Product1" alt="Product 1" />
-            <span class="discount-badge">-20%</span>
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">Wireless Headphones Pro</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(128 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$79.99</span>
-              <span class="original-price">$99.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-        <!-- Product card 2 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Product2" alt="Product 2" />
-            <span class="discount-badge">-15%</span>
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">4K Smart Webcam</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <span>(256 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$149.99</span>
-              <span class="original-price">$179.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-        <!-- Product card 3 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Product3" alt="Product 3" />
-            <span class="discount-badge">-25%</span>
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">Professional Camera Tripod</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(84 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$34.99</span>
-              <span class="original-price">$49.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-        <!-- Product card 4 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Product4" alt="Product 4" />
-            <span class="discount-badge">-10%</span>
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">Ultra HD Smart Watch</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-star-half-stroke"></i>
-              <span>(512 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$199.99</span>
-              <span class="original-price">$229.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ── SECTION 4: REQUEST BANNER ── -->
-    <section class="request-banner">
-      <div class="banner-content">
-        <!-- Banner title and description -->
-        <div class="banner-text">
-          <h2>An easy way to send requests to all suppliers</h2>
-          <p>Find out how millions of buyers and suppliers work together</p>
+        <!-- Product Card 1: Smart watches -->
+        <div class="product-card">
+          <div class="product-image">
+            <!-- Manual Image Instruction: Replace with actual smart watches product image -->
+            <!-- Example: <img src="path/to/smartwatch.jpg" alt="Smart watches" /> -->
+          </div>
+          <p class="product-name">Smart watches</p>
+          <p class="product-discount">-25%</p>
         </div>
-        <!-- Request form for user inquiries -->
-        <form class="request-form" id="requestForm">
-          <input type="text" placeholder="What are you looking for today?" required />
-          <button type="submit" class="submit-btn">Send inquiry</button>
-        </form>
-      </div>
-    </section>
 
-    <!-- ── SECTION 5: HOME AND GARDEN CATEGORY ── -->
-    <section class="products-section">
-      <div class="section-header">
-        <h2>Home and Garden</h2>
-        <a href="#" class="view-all-link">View all →</a>
-      </div>
-      <div class="products-grid">
-        <!-- Product card 1 -->
+        <!-- Product Card 2: Laptops -->
         <div class="product-card">
           <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Home1" alt="Home product 1" />
+            <!-- Manual Image Instruction: Replace with actual laptops product image -->
+            <!-- Example: <img src="path/to/laptop.jpg" alt="Laptops" /> -->
           </div>
-          <div class="product-details">
-            <h4 class="product-name">Modern Table Lamp</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(95 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$45.00</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
+          <p class="product-name">Laptops</p>
+          <p class="product-discount">-30%</p>
         </div>
-        <!-- Product card 2 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Home2" alt="Home product 2" />
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">Garden Tool Set</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-star-half-stroke"></i>
-              <span>(142 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$59.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-        <!-- Product card 3 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Home3" alt="Home product 3" />
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">Decorative Floor Vase</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(67 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$29.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-        <!-- Product card 4 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Home4" alt="Home product 4" />
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">Smart Door Lock</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <span>(289 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$189.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ── SECTION 6: CONSUMER ELECTRONICS CATEGORY ── -->
-    <section class="products-section">
-      <div class="section-header">
-        <h2>Consumer Electronics and Appliances</h2>
-        <a href="#" class="view-all-link">View all →</a>
-      </div>
-      <div class="products-grid">
-        <!-- Product card 1 -->
+        <!-- Product Card 3: GoPro cameras -->
         <div class="product-card">
           <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Electronics1" alt="Electronics 1" />
-            <span class="discount-badge">-30%</span>
+            <!-- Manual Image Instruction: Replace with actual GoPro camera product image -->
+            <!-- Example: <img src="path/to/gopro.jpg" alt="GoPro cameras" /> -->
           </div>
-          <div class="product-details">
-            <h4 class="product-name">43" 4K Smart TV</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <span>(423 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$349.99</span>
-              <span class="original-price">$499.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
+          <p class="product-name">GoPro cameras</p>
+          <p class="product-discount">-40%</p>
         </div>
-        <!-- Product card 2 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Electronics2" alt="Electronics 2" />
-            <span class="discount-badge">-20%</span>
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">Microwave Oven</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <span>(178 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$99.99</span>
-              <span class="original-price">$129.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-        <!-- Product card 3 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Electronics3" alt="Electronics 3" />
-            <span class="discount-badge">-15%</span>
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">Coffee Maker Machine</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-star-half-stroke"></i>
-              <span>(234 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$84.99</span>
-              <span class="original-price">$99.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-        <!-- Product card 4 -->
-        <div class="product-card">
-          <div class="product-image">
-            <img src="https://via.placeholder.com/200x200?text=Electronics4" alt="Electronics 4" />
-          </div>
-          <div class="product-details">
-            <h4 class="product-name">Portable Bluetooth Speaker</h4>
-            <div class="product-rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-star-half-stroke"></i>
-              <span>(367 reviews)</span>
-            </div>
-            <div class="product-price">
-              <span class="current-price">$59.99</span>
-            </div>
-            <button class="add-to-cart-btn">Add to cart</button>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ── SECTION 7: OUR EXTRA SERVICES ── -->
-    <section class="services-section">
-      <div class="services-header">
-        <h2>Our Extra Services</h2>
-        <p>Quality services to enhance your shopping experience</p>
-      </div>
-      <div class="services-grid">
-        <!-- Service card 1: Sourcing -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-earth-americas"></i>
+        <!-- Product Card 4: Headphones -->
+        <div class="product-card">
+          <div class="product-image">
+            <!-- Manual Image Instruction: Replace with actual headphones product image -->
+            <!-- Example: <img src="path/to/headphones.jpg" alt="Headphones" /> -->
           </div>
-          <h3>Sourcing from 50 countries</h3>
-          <p>Access a wide range of quality products sourced globally to meet your needs</p>
+          <p class="product-name">Headphones</p>
+          <p class="product-discount">-25%</p>
         </div>
-        <!-- Service card 2: Customization -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+        <!-- Product Card 5: Canon cameras -->
+        <div class="product-card">
+          <div class="product-image">
+            <!-- Manual Image Instruction: Replace with actual Canon camera product image -->
+            <!-- Example: <img src="path/to/canon.jpg" alt="Canon cameras" /> -->
           </div>
-          <h3>Customized your request</h3>
-          <p>Get personalized product solutions tailored specifically to your requirements</p>
+          <p class="product-name">Canon cameras</p>
+          <p class="product-discount">-28%</p>
         </div>
-        <!-- Service card 3: Reliable Suppliers -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-shield"></i>
-          </div>
-          <h3>Get reliable suppliers</h3>
-          <p>Connect with trusted and verified suppliers ensuring quality and reliability</p>
-        </div>
-        <!-- Service card 4: Product Matching -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-thumbs-up"></i>
-          </div>
-          <h3>Product matched</h3>
-          <p>Easily find and match the perfect products for your business requirements</p>
-        </div>
+
       </div>
     </section>
 
