@@ -1325,7 +1325,7 @@ footer {
 .banner-text {
   position: relative;
   z-index: 2;
-  padding: 36px 32px;
+  padding: 4rem;
   border-radius: 0.5rem;
   margin-top:2rem;
   margin-left:1rem;
@@ -1656,11 +1656,11 @@ footer {
     }
  
     .section-banner.home {
-      background: #dadcd9;
+      background: #0d0d0d;
     }
  
     .section-banner.electronics {
-      background: #dde8f5;
+      background: #5a7291;
     }
  
     .banner-img {
@@ -1691,6 +1691,7 @@ footer {
     .banner-text {
       position: relative;
       z-index: 1;
+      margin: -1rem -1rem;
     }
  
     .banner-text h2 {
