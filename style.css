@@ -1648,7 +1648,6 @@ footer {
     .section-banner {
       width: 250px;
       min-width: 200px;
-      padding-top: 20px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -1693,7 +1692,8 @@ footer {
     .banner-text {
       position: relative;
       z-index: 1;
-      margin: -1rem -1rem;
+      margin-top: -1.5rem;
+      margin-left: -1.6rem;
     }
  
     .banner-text h2 {
