@@ -2132,8 +2132,9 @@ footer {
 /* Styling Code for Newsletter section */
 .newsletter-section {
   background: #f0f2f5;
-  padding: 36px 20px;
+  padding: 2.9rem;
   text-align: center;
+
 }
 
 .newsletter-title {
