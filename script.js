@@ -195,3 +195,55 @@ const dropdown = document.querySelector('.dropdown');
         console.log('Hovering product:', this.querySelector('.product-name').textContent);
       });
     });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const categoryItems = document.querySelectorAll('.category-item');
+ 
+  categoryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      // Remove active from all
+      categoryItems.forEach(i => i.classList.remove('active'));
+      // Set active on clicked
+      item.classList.add('active');
+    });
+  });
+});
+
+
+const now = new Date();
+const target = new Date(
+  now.getTime() +
+  (4 * 24 * 60 * 60 * 1000) +
+  (13 * 60 * 60 * 1000) +
+  (34 * 60 * 1000) +
+  (56 * 1000)
+);
+ 
+function pad(n) {
+  return String(n).padStart(2, '0');
+}
+ 
+function updateCountdown() {
+  const diff = target - new Date();
+ 
+  if (diff <= 0) {
+    document.getElementById('days').textContent    = '00';
+    document.getElementById('hours').textContent   = '00';
+    document.getElementById('minutes').textContent = '00';
+    document.getElementById('seconds').textContent = '00';
+    return;
+  }
+ 
+  const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours   = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+ 
+  document.getElementById('days').textContent    = pad(days);
+  document.getElementById('hours').textContent   = pad(hours);
+  document.getElementById('minutes').textContent = pad(minutes);
+  document.getElementById('seconds').textContent = pad(seconds);
+}
+ 
+updateCountdown();
+setInterval(updateCountdown, 1000);

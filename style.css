@@ -1243,3 +1243,388 @@ footer {
     font-size: 12px;
   }
 }
+
+/* ─── Outer wrapper ─────────────────────────────────────── */
+.hero-section {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 1180px;
+  max-height: 400px;
+  margin: 1rem 5rem;
+}
+ 
+/* ─── LEFT: Category Sidebar ────────────────────────────── */
+.category-sidebar {
+  width: 200px;
+  min-width: 200px;
+  border-right: 1px solid #e8e8e8;
+  padding: 10px 0;
+  background: #fff;
+  
+}
+ 
+.category-list {
+  list-style: none;
+  display: flex-column;
+  padding: 0.2rem;
+  margin:0.2rem;
+  gap: 5rem;
+}
+ 
+.category-item {
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #333;
+  padding: 9px 18px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  line-height: 1.3;
+}
+ 
+.category-item:hover {
+  background: #f0f4ff;
+  color: #1a6fff;
+  border-radius: 0.2rem;
+  margin: 0.2rem;
+}
+ 
+.category-item.active {
+  font-weight: 600;
+  color: #1a6fff;
+  background: #E5F1FF;
+  border-radius: 0.2rem;
+  margin: 0.2rem;
+}
+ 
+/* ─── CENTER: Banner ────────────────────────────────────── */
+.banner {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+}
+ 
+.banner-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  padding:0.2rem;
+  border-radius:0.5rem;
+}
+ 
+.banner-text {
+  position: relative;
+  z-index: 2;
+  padding: 36px 32px;
+  border-radius: 0.5rem;
+}
+ 
+.banner-subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  color: #222;
+  margin: 0 0 4px 0;
+}
+ 
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+ 
+.btn-learn-more {
+  display: inline-block;
+  margin-top:0.2rem;
+  padding: 9px 25px;
+  font-size: 13.5px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+ 
+.btn-learn-more:hover {
+  background: #f5f5f5;
+  border-color: #aaa;
+}
+ 
+/* ─── RIGHT: Auth + Promo ───────────────────────────────── */
+.right-panel {
+  width: 185px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0.7rem;
+}
+ 
+/* Auth card */
+.auth-card {
+  padding: 14px 14px 12px;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgb(224, 246, 253);
+  border-radius: 0.5rem;
+}
+ 
+.auth-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+ 
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+ 
+.auth-text {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.auth-hi {
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.3;
+}
+ 
+.auth-sub {
+  font-size: 12px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.3;
+}
+ 
+.btn-join {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  background: #1a6fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+ 
+.btn-join:hover {
+  background: #155ee0;
+}
+ 
+.btn-login {
+  width: 100%;
+  padding: 7px 0;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #1a6fff;
+  background: #fff;
+  border: 1px solid #1a6fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+ 
+.btn-login:hover {
+  background: #f0f4ff;
+}
+ 
+/* Promo cards */
+.promo-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 14px 14px;
+  border-radius: 0.5rem;
+}
+ 
+.promo-card p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+ 
+.promo-card.orange {
+  background: #f07c30;
+}
+ 
+.promo-card.teal {
+  background: #54b8c8;
+}
+
+/* ─── Outer wrapper ─────────────────────────────────────── */
+.deals-section {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 1180px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom:1rem;
+  padding: 6px 20px;
+}
+ 
+/* ─── LEFT: Info + Countdown ────────────────────────────── */
+.deals-info {
+  min-width: 200px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 0;
+  padding-right: 2px;
+}
+ 
+.deals-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 0.9;
+}
+ 
+.deals-subtitle {
+  font-weight: 400;
+  color: #8c8e91;
+  margin-bottom: 10px;
+  font-size:0.87rem;
+}
+ 
+/* Countdown */
+.countdown {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+ 
+.countdown-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3d3d3d;
+  border-radius: 4px;
+  padding: 5px 8px;
+  min-width: 36px;
+}
+ 
+.count-num {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+}
+ 
+.count-label {
+  font-size: 10px;
+  font-weight: 400;
+  color: #ccc;
+  line-height: 1.2;
+  margin-top: 1px;
+}
+ 
+/* ─── Divider ───────────────────────────────────────────── */
+.deals-divider {
+  width: 1px;
+  align-self: stretch;
+  background: #e8e8e8;
+  flex-shrink: 0;
+}
+ 
+/* ─── RIGHT: Product Cards ──────────────────────────────── */
+.deals-cards {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex: 1;
+}
+ 
+.deal-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+  border-right: 1px solid #e8e8e8;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+ 
+.deal-card:last-child {
+  border-right: none;
+  margin-right:-1rem;
+}
+ 
+.deal-card:hover {
+  background: #fafafa;
+  border-radius: 0.5rem;
+}
+ 
+/* Image wrapper */
+.card-img-wrap {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+ 
+.card-img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+ 
+/* Card name */
+.card-name {
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+ 
+/* Discount badge */
+.card-discount {
+  display: inline-block;
+  background: #ffe5e5;
+  color: #e84040;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
