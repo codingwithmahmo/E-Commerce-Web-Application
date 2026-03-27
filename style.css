@@ -1264,7 +1264,8 @@ footer {
   min-width: 200px;
   border-right: 1px solid #e8e8e8;
   padding: 10px 0;
-  background: #fff;
+  margin-top: 0.2rem;
+  background: #ffffff;
   
 }
  
@@ -1325,7 +1326,7 @@ footer {
 .banner-text {
   position: relative;
   z-index: 2;
-  padding: 4rem;
+  padding: 2.5rem;
   border-radius: 0.5rem;
   margin-top:2rem;
   margin-left:1rem;
