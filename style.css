@@ -1326,7 +1326,8 @@ footer {
 .banner-text {
   position: relative;
   z-index: 2;
-  padding: 2.5rem;
+  padding: 4rem;
+  margin-left:auto;
   border-radius: 0.5rem;
   margin-top:2rem;
   margin-left:1rem;
@@ -1813,7 +1814,7 @@ footer {
   margin-left: 5rem;
   margin-right: 5rem;
   margin-top: 0.2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 0.5rem;
   background: linear-gradient(to right, #1565c0, #42a5f5);
   background-image: linear-gradient(to right, rgba(8, 40, 77, 0.50), rgba(66, 165, 245, 0.20)),
                     url('assets/Image/backgrounds/Group\ 982.png'); /* replace with your image */
@@ -1926,4 +1927,72 @@ footer {
 
 .quote-btn:hover {
   background: #559ade;
+}
+
+
+.recommended-section {
+  padding: 24px 0;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.recommended-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  margin-top: 0.2rem;
+}
+
+.recommended-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.item-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.item-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.item-img {
+  width: 100%;
+  height: auto;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.item-img img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.item-info {
+  padding: 10px 12px 14px;
+}
+
+.item-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+  margin-top:0.4rem;
+}
+
+.item-name {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
 }
