@@ -13,8 +13,28 @@ const dropdown = document.querySelector('.dropdown');
     });
 
     // ── Category Select ──
-    document.querySelector('.category-select').addEventListener('click', function () {
-      alert('Category dropdown — connect your own menu here!');
+    const categorySelect = document.querySelector('.category-select');
+    const categoryItems = categorySelect.querySelectorAll('.category-dropdown-menu a');
+    const selectedCategorySpan = document.getElementById('selected-category');
+
+    categorySelect.addEventListener('click', function (e) {
+      e.stopPropagation();
+      this.classList.toggle('open');
+    });
+
+    categoryItems.forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        const categoryName = this.getAttribute('data-category');
+        selectedCategorySpan.textContent = categoryName;
+        categorySelect.classList.remove('open');
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!categorySelect.contains(e.target)) {
+        categorySelect.classList.remove('open');
+      }
     });
 
     // ── Language / Ship To ──

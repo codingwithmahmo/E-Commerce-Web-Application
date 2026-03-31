@@ -83,9 +83,52 @@ body {
   background: #fff;
 }
 
+.category-select {
+  position: relative;
+}
+
 .category-select i {
   font-size: 11px;
   color: #888;
+  transition: transform 0.2s;
+}
+
+.category-select.open i {
+  transform: rotate(180deg);
+}
+
+.category-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 8px 0;
+  margin-top: 4px;
+}
+
+.category-dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.category-dropdown-menu a:hover {
+  background: #f0f4ff;
+  color: #1976d2;
+}
+
+.category-select.open .category-dropdown-menu {
+  display: block;
 }
 
 .search-btn {
